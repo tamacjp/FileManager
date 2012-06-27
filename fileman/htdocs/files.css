@@ -1,0 +1,38 @@
+
+#operator {
+	background-color:#FFF;
+	position:fixed;
+	top:0px;
+	width:98%;
+}
+
+div.filerow, div.headerrow {
+	cursor:default;
+}
+div.filerow:hover {
+	background-color:#FFC;
+}
+
+span.filecheck {
+	display:inline-block;
+	width:20px;
+}
+
+span.filename {
+	display:inline-block;
+	width:300px;
+	margin:0px 5px;
+}
+
+span.filesize {
+	display:inline-block;
+	width:120px;
+	text-align:right;
+	margin:0px 5px;
+}
+
+span.filemtime {
+	display:inline-block;
+	margin:0px 5px;
+}
+

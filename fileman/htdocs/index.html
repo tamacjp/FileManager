@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+	<title>ファイル管理</title>
+	<link rel="stylesheet" type="text/css" href="files.css" />
+ 	<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript" src="files.js"></script>
+  </head>
+
+  <body>
+	<div id="operator">
+	  <div style="float:left;">
+		<input type="button" id="selectallbtn" value="全て選択" />
+		<input type="button" id="deselectallbtn" value="全て選択解除" />
+		<span id="operation2" style="display:none;">
+		  <input type="button" id="downloadbtn" value="ダウンロード" />
+		  <input type="button" id="deletebtn" value="削除" />
+		</span>
+	  </div>
+	  <div style="text-align:right;">
+		<span id="operation1">
+		  <input type="file" id="uploadform" multiple="multiple" />
+		</span>
+		<input type="button" id="refreshbtn" value="再読み込み" />
+		<label for="confirmcheck"><input type="checkbox" id="confirmcheck" checked="checked" />確認アラート</label>
+		<label for="resultcheck"><input type="checkbox" id="resultcheck" checked="checked" />結果アラート</label>
+	  </div>
+
+	  <div id="header">
+	  </div>
+	</div>
+
+	<div id="dropinfo" style="position:absolute; display:none; background:#CFC; width:100px; height:20px;">
+	  アップロード
+	</div>
+
+	<div id="files">
+	</div>
+  </body>
+</html>
