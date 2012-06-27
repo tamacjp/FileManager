@@ -14,7 +14,10 @@ import functools
 import mimetypes
 from cStringIO import StringIO
 import proc
-import conf
+try:
+    import conf
+except ImportError:
+    import conf_default as conf
 
 
 class StatusException(Exception):

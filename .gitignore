@@ -1,2 +1,3 @@
 *.pyc
+fileman/conf.py
 fileman/files/*

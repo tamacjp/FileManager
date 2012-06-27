@@ -10,7 +10,10 @@ from django.conf.urls.defaults import url
 from django.views.static import serve
 from django.http import HttpResponse
 import proc
-import conf
+try:
+    import conf
+except ImportError:
+    import conf_default as conf
 
 
 def response(request, func, mimetype='text/plain'):

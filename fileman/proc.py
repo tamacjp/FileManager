@@ -12,7 +12,10 @@ import json
 import zipfile
 from cStringIO import StringIO
 from datetime import datetime
-import conf
+try:
+    import conf
+except ImportError:
+    import conf_default as conf
 
 
 class FileItem(dict):
