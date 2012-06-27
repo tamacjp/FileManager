@@ -13,11 +13,9 @@ DOCUMENT_ROOT = os.path.join(os.path.dirname(__file__), 'htdocs')
 
 # アップロードファイルを置く場所
 FILES_DIR = os.path.join(os.path.dirname(__file__), 'files')
-#from django.conf import settings
-#FILES_DIR = os.path.join(settings.MEDIA_ROOT, 'files')
 
 # アップロードファイルのアクセスURL
-FILES_URL = '/media/files/'
+FILES_URL = '%sfiles/' % BASE_URI
 
 # 認証デコレータ
 auth = lambda func: func
